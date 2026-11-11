@@ -3,79 +3,229 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Juan Pedro Maestrone is an electrical engineer and MVA master's student interested in computer vision and 3D perception.">
+  <meta name="description" data-i18n-content="description" content="Juan Pedro Maestrone is an electrical engineer and MVA master's student interested in computer vision and 3D perception.">
   <title>Juan Pedro Maestrone</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-name" href="#top">Juan Pedro Maestrone<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#interests">Interests</a>
-        <a href="#research">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-controls">
+        <nav aria-label="Main navigation" data-i18n-aria-label="navigation">
+          <a href="#interests" data-i18n="navInterests">Interests</a>
+          <a href="#research" data-i18n="navPublications">Publications</a>
+          <a href="#experience" data-i18n="navExperience">Experience</a>
+          <a href="#education" data-i18n="navEducation">Education</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="language">
+          <button type="button" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-label="Español" aria-pressed="false">ESP</button>
+          <button type="button" data-lang="fr" aria-label="Français" aria-pressed="false">FR</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="wrap" id="main">
     <section class="profile" id="top" aria-labelledby="profile-title">
       <div class="profile-main">
-        <p class="eyebrow">Computer vision · Machine learning</p>
+        <p class="eyebrow" data-i18n="profileEyebrow">Computer vision · Machine learning</p>
         <h1 id="profile-title">Juan Pedro Maestrone</h1>
-        <p class="affiliation">MVA master’s student <span>·</span> Electrical engineer</p>
+        <p class="affiliation"><span data-i18n="affiliationStudent">MVA master’s student</span> <span>·</span> <span data-i18n="affiliationEngineer">Electrical engineer</span></p>
         <div class="bio">
-          <p>I’m an electrical engineer and MVA master’s student at ENS Paris-Saclay / Université Paris-Saclay. My interests include computer vision, 3D perception, geometric deep learning and robotics.</p>
-          <p>I work across research, teaching and applied AI, with experience in visual perception and LLM-based systems.</p>
+          <p data-i18n="bioOne">I’m an electrical engineer and MVA master’s student at ENS Paris-Saclay / Université Paris-Saclay. My interests include computer vision, 3D perception, geometric deep learning and robotics.</p>
+          <p data-i18n="bioTwo">I work across research, teaching and applied AI, with experience in visual perception and LLM-based systems.</p>
         </div>
         <div class="profile-links"><a href="https://www.linkedin.com/in/jpmaestrone/">LinkedIn <span aria-hidden="true">↗</span></a></div>
       </div>
-      <aside class="profile-aside" aria-label="Current focus">
+      <aside class="profile-aside" aria-label="Current focus" data-i18n-aria-label="focus">
         <img class="portrait" src="portrait.png" alt="Juan Pedro Maestrone" width="1468" height="1468">
-        <p class="aside-label">Looking ahead</p>
-        <p>Seeking a six-month research or applied research internship in the Paris area from May 2027; April is also possible.</p>
+        <p class="aside-label" data-i18n="lookingAhead">Looking ahead</p>
+        <p data-i18n="internship">Seeking a six-month research or applied research internship in the Paris area from May 2027; April is also possible.</p>
       </aside>
     </section>
 
     <section class="content-section" id="interests" aria-labelledby="interests-title">
-      <div class="section-heading"><div><p class="eyebrow">What I’m exploring</p><h2 id="interests-title">Research interests</h2></div></div>
-      <p class="interests-copy">I’m interested in computer vision and 3D perception, including video understanding, camera-pose estimation and geometric deep learning for robotics. I’m also curious about multimodal models, world models and LLM-based systems.</p>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="interestsEyebrow">What I’m exploring</p><h2 id="interests-title" data-i18n="interestsTitle">Research interests</h2></div></div>
+      <p class="interests-copy" data-i18n="interestsCopy">I’m interested in computer vision and 3D perception, including video understanding, camera-pose estimation and geometric deep learning for robotics. I’m also curious about multimodal models, world models and LLM-based systems.</p>
     </section>
 
     <section class="content-section" id="research" aria-labelledby="research-title">
-      <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="research-title">Publication</h2></div></div>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="researchEyebrow">Selected work</p><h2 id="research-title" data-i18n="researchTitle">Publication</h2></div></div>
       <article class="publication-entry">
-        <p class="entry-meta">IEEE ICIT 2026 <span>·</span> Oral presentation</p>
+        <p class="entry-meta">IEEE ICIT 2026 <span>·</span> <span data-i18n="oralPresentation">Oral presentation</span></p>
         <h3>A Hierarchical Selection of Instance Segmentation Models for Wind Turbine Blade Defect Detection</h3>
-        <p class="authors">Juan Pablo Carballal, <strong>Juan Pedro Maestrone</strong>, Mauricio Olivera, Agustín López, Juan Pirotto, Guillermo Carbajal, Facundo Benavides and Rafael Canetti</p>
-        <p>Research on dataset design and model evaluation for wind-turbine inspection, developed as part of SUperAVISPAS.</p>
-        <p class="recognition">IEEE IES Students &amp; Young Professionals Paper Assistance (SYPA). The three-author thesis received the 2025 Best Electrical Engineering Final Project award from ANIU.</p>
-        <div class="research-links"><a class="entry-link" href="https://doi.org/10.1109/ICIT64854.2026.11491076">Paper / DOI <span aria-hidden="true">↗</span></a><a class="entry-link" href="https://hdl.handle.net/20.500.12008/50655">Thesis (Spanish) <span aria-hidden="true">↗</span></a></div>
+        <p class="authors">Juan Pablo Carballal, <strong>Juan Pedro Maestrone</strong>, Mauricio Olivera, Agustín López, Juan Pirotto, Guillermo Carbajal, Facundo Benavides <span data-i18n="and">and</span> Rafael Canetti</p>
+        <p data-i18n="publicationCopy">Research on dataset design and model evaluation for wind-turbine inspection, developed as part of SUperAVISPAS.</p>
+        <p class="recognition" data-i18n="recognition">IEEE IES Students &amp; Young Professionals Paper Assistance (SYPA). The three-author thesis received the 2025 Best Electrical Engineering Final Project award from ANIU.</p>
+        <div class="research-links"><a class="entry-link" href="https://doi.org/10.1109/ICIT64854.2026.11491076"><span data-i18n="paperLink">Paper / DOI</span> <span aria-hidden="true">↗</span></a><a class="entry-link" href="https://hdl.handle.net/20.500.12008/50655"><span data-i18n="thesisLink">Thesis (Spanish)</span> <span aria-hidden="true">↗</span></a></div>
       </article>
     </section>
 
     <section class="content-section" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading"><div><p class="eyebrow">Background</p><h2 id="experience-title">Experience</h2></div></div>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="experienceEyebrow">Background</p><h2 id="experience-title" data-i18n="experienceTitle">Experience</h2></div></div>
       <div class="entries">
-        <article class="entry"><p class="entry-date">2025 — 2026</p><div><h3>AI Developer</h3><p class="entry-place">Eagerworks · Montevideo</p><p>Worked on detection and tracking, camera-pose estimation, and LLM-based agents using LangChain, LangGraph and MCP.</p></div></article>
-        <article class="entry"><p class="entry-date">2022 — present</p><div><h3>Research &amp; Teaching Assistant</h3><p class="entry-place">Institute of Electrical Engineering, UdelaR</p><p>Taught machine learning, digital design and microprocessors. On unpaid leave, with limited remote research collaboration.</p></div></article>
+        <article class="entry"><p class="entry-date">2025 — 2026</p><div><h3 data-i18n="aiDeveloper">AI Developer</h3><p class="entry-place">Eagerworks · Montevideo</p><p data-i18n="aiDeveloperCopy">Worked on detection and tracking, camera-pose estimation, and LLM-based agents using LangChain, LangGraph and MCP.</p></div></article>
+        <article class="entry"><p class="entry-date">2022 — <span data-i18n="present">present</span></p><div><h3 data-i18n="researchAssistant">Research &amp; Teaching Assistant</h3><p class="entry-place" data-i18n="institute">Institute of Electrical Engineering, UdelaR</p><p data-i18n="researchAssistantCopy">Taught machine learning, digital design and microprocessors. On unpaid leave, with limited remote research collaboration.</p></div></article>
       </div>
     </section>
 
     <section class="content-section" id="education" aria-labelledby="education-title">
-      <div class="section-heading"><div><p class="eyebrow">Studies</p><h2 id="education-title">Education</h2></div></div>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="educationEyebrow">Studies</p><h2 id="education-title" data-i18n="educationTitle">Education</h2></div></div>
       <div class="entries">
         <article class="entry"><p class="entry-date">2026 — 2027</p><div><h3>M2 Mathématiques, Vision, Apprentissage</h3><p class="entry-place">ENS Paris-Saclay / Université Paris-Saclay</p></div></article>
-        <article class="entry"><p class="entry-date">2019 — 2025</p><div><h3>Electrical Engineering</h3><p class="entry-place">Universidad de la República · Uruguay</p></div></article>
+        <article class="entry"><p class="entry-date">2019 — 2025</p><div><h3 data-i18n="electricalEngineering">Electrical Engineering</h3><p class="entry-place">Universidad de la República · Uruguay</p></div></article>
       </div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s connect.</h2><p>For research opportunities and collaborations, find me on LinkedIn.</p></div><div class="contact-links"><a href="https://www.linkedin.com/in/jpmaestrone/">LinkedIn <span aria-hidden="true">↗</span></a></div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow" data-i18n="contactEyebrow">Get in touch</p><h2 id="contact-title" data-i18n="contactTitle">Let’s connect.</h2><p data-i18n="contactCopy">For research opportunities and collaborations, find me on LinkedIn.</p></div><div class="contact-links"><a href="https://www.linkedin.com/in/jpmaestrone/">LinkedIn <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="wrap footer"><span>Juan Pedro Maestrone · Paris area</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="wrap footer"><span>Juan Pedro Maestrone · <span data-i18n="parisArea">Paris area</span></span><a href="#top" data-i18n="backToTop">Back to top ↑</a></footer>
+  <script>
+    const translations = {
+      es: {
+        description: "Juan Pedro Maestrone es ingeniero electricista y estudiante del máster MVA, interesado en visión por computadora y percepción 3D.",
+        skip: "Saltar al contenido",
+        navigation: "Navegación principal",
+        language: "Idioma",
+        navInterests: "Intereses",
+        navPublications: "Publicaciones",
+        navExperience: "Experiencia",
+        navEducation: "Formación",
+        navContact: "Contacto",
+        profileEyebrow: "Visión por computadora · Aprendizaje automático",
+        affiliationStudent: "Estudiante del máster MVA",
+        affiliationEngineer: "Ingeniero electricista",
+        bioOne: "Soy ingeniero electricista y estudiante del máster MVA en ENS Paris-Saclay / Université Paris-Saclay. Mis intereses incluyen la visión por computadora, la percepción 3D, el aprendizaje profundo geométrico y la robótica.",
+        bioTwo: "Trabajo en investigación, docencia e IA aplicada, con experiencia en percepción visual y sistemas basados en modelos de lenguaje.",
+        focus: "Objetivo actual",
+        lookingAhead: "Próximos pasos",
+        internship: "Busco una pasantía de seis meses en investigación o investigación aplicada en el área de París a partir de mayo de 2027; abril también es posible.",
+        interestsEyebrow: "Lo que investigo",
+        interestsTitle: "Intereses de investigación",
+        interestsCopy: "Me interesan la visión por computadora y la percepción 3D, incluida la comprensión de vídeo, la estimación de la pose de la cámara y el aprendizaje profundo geométrico para robótica. También me interesan los modelos multimodales, los modelos del mundo y los sistemas basados en modelos de lenguaje.",
+        researchEyebrow: "Trabajo destacado",
+        researchTitle: "Publicación",
+        oralPresentation: "Presentación oral",
+        and: "y",
+        publicationCopy: "Investigación sobre el diseño de conjuntos de datos y la evaluación de modelos para la inspección de aerogeneradores, desarrollada en el marco de SUperAVISPAS.",
+        recognition: "IEEE IES Students & Young Professionals Paper Assistance (SYPA). La tesis de tres autores recibió el premio de ANIU al mejor proyecto final de Ingeniería Eléctrica de 2025.",
+        paperLink: "Artículo / DOI",
+        thesisLink: "Tesis (en español)",
+        experienceEyebrow: "Trayectoria",
+        experienceTitle: "Experiencia",
+        aiDeveloper: "Desarrollador de IA",
+        aiDeveloperCopy: "Trabajé en detección y seguimiento, estimación de la pose de la cámara y agentes basados en modelos de lenguaje con LangChain, LangGraph y MCP.",
+        present: "actualidad",
+        researchAssistant: "Asistente de investigación y docencia",
+        institute: "Instituto de Ingeniería Eléctrica, UdelaR",
+        researchAssistantCopy: "Impartí clases de aprendizaje automático, diseño digital y microprocesadores. Estoy de licencia sin goce de sueldo y mantengo una colaboración limitada de investigación a distancia.",
+        educationEyebrow: "Estudios",
+        educationTitle: "Formación",
+        electricalEngineering: "Ingeniería Eléctrica",
+        contactEyebrow: "Hablemos",
+        contactTitle: "Conectemos.",
+        contactCopy: "Para oportunidades de investigación y colaboraciones, puedes encontrarme en LinkedIn.",
+        parisArea: "área de París",
+        backToTop: "Volver arriba ↑"
+      },
+      fr: {
+        description: "Juan Pedro Maestrone est ingénieur électricien et étudiant du master MVA, intéressé par la vision par ordinateur et la perception 3D.",
+        skip: "Aller au contenu",
+        navigation: "Navigation principale",
+        language: "Langue",
+        navInterests: "Intérêts",
+        navPublications: "Publications",
+        navExperience: "Expérience",
+        navEducation: "Formation",
+        navContact: "Contact",
+        profileEyebrow: "Vision par ordinateur · Apprentissage automatique",
+        affiliationStudent: "Étudiant du master MVA",
+        affiliationEngineer: "Ingénieur électricien",
+        bioOne: "Je suis ingénieur électricien et étudiant du master MVA à l’ENS Paris-Saclay / Université Paris-Saclay. Je m’intéresse à la vision par ordinateur, à la perception 3D, à l’apprentissage profond géométrique et à la robotique.",
+        bioTwo: "Je travaille dans la recherche, l’enseignement et l’IA appliquée, avec une expérience en perception visuelle et en systèmes fondés sur les grands modèles de langage.",
+        focus: "Objectif actuel",
+        lookingAhead: "Perspectives",
+        internship: "Je recherche un stage de six mois en recherche ou en recherche appliquée en région parisienne à partir de mai 2027 ; avril est également possible.",
+        interestsEyebrow: "Mes sujets de recherche",
+        interestsTitle: "Intérêts de recherche",
+        interestsCopy: "Je m’intéresse à la vision par ordinateur et à la perception 3D, notamment à la compréhension vidéo, à l’estimation de la pose de la caméra et à l’apprentissage profond géométrique pour la robotique. Je m’intéresse aussi aux modèles multimodaux, aux modèles du monde et aux systèmes fondés sur les grands modèles de langage.",
+        researchEyebrow: "Travaux sélectionnés",
+        researchTitle: "Publication",
+        oralPresentation: "Présentation orale",
+        and: "et",
+        publicationCopy: "Recherche sur la conception de jeux de données et l’évaluation de modèles pour l’inspection des éoliennes, menée dans le cadre de SUperAVISPAS.",
+        recognition: "IEEE IES Students & Young Professionals Paper Assistance (SYPA). Le mémoire rédigé par trois auteurs a reçu le prix ANIU du meilleur projet de fin d’études en génie électrique en 2025.",
+        paperLink: "Article / DOI",
+        thesisLink: "Mémoire (en espagnol)",
+        experienceEyebrow: "Parcours",
+        experienceTitle: "Expérience",
+        aiDeveloper: "Développeur en IA",
+        aiDeveloperCopy: "J’ai travaillé sur la détection et le suivi, l’estimation de la pose de la caméra et des agents fondés sur les grands modèles de langage avec LangChain, LangGraph et MCP.",
+        present: "aujourd’hui",
+        researchAssistant: "Assistant de recherche et d’enseignement",
+        institute: "Institut de génie électrique, UdelaR",
+        researchAssistantCopy: "J’ai enseigné l’apprentissage automatique, la conception numérique et les microprocesseurs. Je suis en congé sans solde, avec une collaboration de recherche à distance limitée.",
+        educationEyebrow: "Études",
+        educationTitle: "Formation",
+        electricalEngineering: "Génie électrique",
+        contactEyebrow: "Restons en contact",
+        contactTitle: "Échangeons.",
+        contactCopy: "Pour des possibilités de recherche ou de collaboration, retrouvez-moi sur LinkedIn.",
+        parisArea: "région parisienne",
+        backToTop: "Retour en haut ↑"
+      }
+    };
+
+    const translatedText = [...document.querySelectorAll("[data-i18n]")];
+    const translatedLabels = [...document.querySelectorAll("[data-i18n-aria-label]")];
+    const translatedDescriptions = [...document.querySelectorAll("[data-i18n-content]")];
+    const englishText = Object.fromEntries(translatedText.map(element => [element.dataset.i18n, element.textContent]));
+    const englishLabels = Object.fromEntries(translatedLabels.map(element => [element.dataset.i18nAriaLabel, element.getAttribute("aria-label")]));
+    const englishDescriptions = Object.fromEntries(translatedDescriptions.map(element => [element.dataset.i18nContent, element.getAttribute("content")]));
+    const languageButtons = [...document.querySelectorAll("[data-lang]")];
+
+    /** Updates visible text, accessibility labels, metadata, and the document language. */
+    function setLanguage(language) {
+      const selectedLanguage = translations[language] ? language : "en";
+      const selectedTranslations = translations[selectedLanguage] || {};
+
+      translatedText.forEach(element => {
+        const key = element.dataset.i18n;
+        element.textContent = selectedTranslations[key] ?? englishText[key];
+      });
+      translatedLabels.forEach(element => {
+        const key = element.dataset.i18nAriaLabel;
+        element.setAttribute("aria-label", selectedTranslations[key] ?? englishLabels[key]);
+      });
+      translatedDescriptions.forEach(element => {
+        const key = element.dataset.i18nContent;
+        element.setAttribute("content", selectedTranslations[key] ?? englishDescriptions[key]);
+      });
+      document.documentElement.lang = selectedLanguage;
+      languageButtons.forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === selectedLanguage));
+      });
+
+      try {
+        localStorage.setItem("preferredLanguage", selectedLanguage);
+      } catch {
+        // The language switch still works when browser storage is unavailable.
+      }
+    }
+
+    languageButtons.forEach(button => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    try {
+      setLanguage(localStorage.getItem("preferredLanguage") || "en");
+    } catch {
+      setLanguage("en");
+    }
+  </script>
 </body>
 </html>
